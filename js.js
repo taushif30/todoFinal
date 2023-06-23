@@ -105,17 +105,10 @@ function createPopup() {
   deleteTodo.addEventListener("click", function () {
     newTodo.remove();
   });
-  // newItemTodo.addEventListener("click", function () {
-  //   show2();
-  // });
-  // todoHeading.addEventListener("click", function () {
-  //   newTodo.style.display = "none";
-  //   newTodo[todoCount].style.display = "block";
-  // });
+
 }
 
-//
-// var todoDes = document.getElementById(`todoDes`);
+//-------------------------------------------------------------
 function createPopup2() {
   const contentListId = `todoDes${cardId}`;
   var Ul = document.getElementById(contentListId);

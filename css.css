@@ -150,7 +150,7 @@ body {
 
   .todoButtons {
     display: flex;
-    justify-content: right;
+    justify-content:space-between;
     gap: 10px;
   }
 
@@ -158,6 +158,8 @@ body {
     height: 35px;
     width: 35px;
     cursor: pointer;
+    
+    
   }
 
   .deleteTodo {
@@ -165,6 +167,7 @@ body {
     width: 30px;
     cursor: pointer;
     font-size: smaller;
+   
   }
 
   .taskItem {
