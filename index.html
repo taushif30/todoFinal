@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css.css" />
+  </head>
+  <body>
+    <div class="body-container">
+      <div id="body-Subcontainer">
+        <div class="navbar1" id="navbar11">
+          <div class="navbar-logo">
+            Tasks
+            <span class="logo-inner2"> List</span>
+          </div>
+
+          <div>
+            <button class="newTask" onclick="show()">
+              <div class="plus">
+                <img src="./plus.png" alt="not supported" />
+              </div>
+              <span class="newTaskText">Add Item</span>
+            </button>
+          </div>
+        </div>
+
+        <!------------------------------------------------------------ -->
+        <div class="navbar2" id="navbar22">
+          <div class="newTask">
+            <button class="newTask" onclick="back()">
+              <div class="left-arrow">
+                <img src="./back.png" alt="not supported" /></div
+            >
+            <span class="newTaskText">Back</span>
+            </button>
+          </div>
+
+          <div id="headerName">
+          </div>
+          
+          <div>
+            <button class="newTask" onclick="show()">
+              <div class="plus">
+                <img src="./plus.svg" alt="not supported" />
+              </div>
+            
+          </div>
+        </div>
+
+        <!--  -->
+        <div id="todos" class="todo-container">
+          <h2 id="todo-noItems">No Items in the Todo List</h2>
+        </div>
+      </div>
+      <!-- -------------------------------------------------------- -->
+      <div class="popup" id="popup">
+        <h1>Add New Item</h1>
+        <input type="text" id="taskname" placeholder="Add new item" />
+        <br />
+        <div>
+          <button class="addItemBtn" onclick="createPopup()">Add</button>
+          <button class="closeBtn" onclick="hide()">Close</button>
+        </div>
+      </div>
+
+      <!-- ------------------------------------------------------ -->
+      <div class="popup" id="popup2">
+        <h1>Add New List</h1>
+        <input type="text" id="taskname2"  placeholder="Add new task"/>
+        <br />
+        <div>
+          <button class="addItemBtn" onclick="createPopup2()">Add</button>
+          <button class="closeBtn" onclick="hide2()">Close</button>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script src="./js.js"></script>
+  </body>
+</html>

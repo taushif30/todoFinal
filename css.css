@@ -1,0 +1,254 @@
+body {
+    background-color: black;
+    font-family: "Quicksand", sans-serif;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .body-container {
+    width: 1200px;
+    margin-top: 40px;
+  }
+
+  .navbar1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .navbar2 {
+    display: flex;
+    justify-content: space-between;
+    display: none;
+    gap: 40px;
+    margin-bottom: 20px;
+  }
+
+  .navbar-logo {
+    font-size: 34px;
+    font-weight: bold;
+  
+    width: auto;
+    color: #fff;
+  }
+
+  .logo-inner2 {
+    font-weight: normal;
+  }
+
+  .newTask {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  a:link {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .plus img {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+  }
+
+  .left-arrow img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    padding: 5px;
+    filter: invert(1);
+  }
+
+  .popup {
+    background-color: #fcdada;
+    color: rgb(255, 10, 10);
+    width: max-content;
+    padding: 40px;
+    display: none;
+    font-weight: 400;
+    position: fixed;
+    top: 40vh;
+    left: 40vw;
+    border-radius: 10px;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border: 2px solid rgb(62, 5, 5);
+  }
+  
+
+  .popup div {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .popup h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .popup input {
+    width: 25vh;
+    margin: 14px;
+    border: 1px solid rgb(62, 5, 5);
+    border-radius: 10px;
+    /* padding: 5px 5px 5px 55px; */
+    padding: 5px;
+    text-align: center;
+  }
+
+  .popup button {
+    background-color: rgb(247, 36, 36);
+    color: white;
+    width: 60px;
+    height: 25px;
+    border-radius: 15px;
+    border: 0px;
+  }
+  
+  .todo-container {
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: relative;
+    left: -10px;
+  }
+
+  .todocard {
+    background-color: #ffffff;
+    padding: 10px;
+    color: rgb(249, 4, 4);
+    width: 200px;
+    min-height: 300px;
+    border-radius: 5px;
+    border: 2px solid red;
+  }
+
+  .todoHeadings {
+    text-align: center;
+  
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .todoDes {
+    min-height: 200px;
+  }
+
+  .todoButtons {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+  }
+
+  .newItemTodo {
+    height: 35px;
+    width: 35px;
+    cursor: pointer;
+  }
+
+  .deleteTodo {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    font-size: smaller;
+  }
+
+  .taskItem {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 0;
+  }
+
+  .taskItem p {
+    margin: 0;
+  }
+
+  #headerName {
+    font-size: 34px;
+    font-weight: bold;
+  
+    width: auto;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  #taskname{
+    border-color: tomato;
+    border-radius: 7px;
+  
+  }
+
+  .taskItem button {
+    background-color: rgb(234, 144, 144);
+    color: white;
+    width: 60px;
+    height: 25px;
+    border-radius: 10px;
+    border: 0px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid rgb(111, 2, 2);
+    color: black;
+  }
+
+  .taskItem p {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  
+  @media (max-width: 768px) {
+    .popup {
+      left: 10vw;
+    }
+    .navbar-logo {
+      font-size: 26px;
+    }
+    .plus img {
+      height: 30px;
+      width: 30px;
+      padding: 3px;
+      background-color: white;
+    }
+    .newTaskText {
+      font-size: 20px;
+    }
+    .left-arrow img {
+      height: 30px;
+      width: 30px;
+      padding: 3px;
+    }
+    #headerName {
+      font-size: 28px;
+      width: 20vh;
+      color: #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .navbar2 .newTaskText {
+      display: none;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .popup {
+      left: 25vw;
+    }
+  }
