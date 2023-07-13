@@ -234,8 +234,8 @@ body {
     .plus img {
       height: 30px;
       width: 30px;
-      padding: 3px;
-      background-color: white;
+      /* padding: 3px; */
+      /* background-color: white; */
     }
     .newTaskText {
       font-size: 20px;
